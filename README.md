@@ -1,1 +1,1 @@
-ktane-commonSense
+#[ModKit Wiki](../../wiki)

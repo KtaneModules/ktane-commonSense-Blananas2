@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
+  m_Name: ModConfig
+  m_EditorClassIdentifier: 
+  id: commonSense
+  title: Common Sense
+  author: Blananas2
+  description: "Sorry history nerds, we ain\u2019t gonna do anything like that just
+    yet.\n\nModule ID: Common Sense\nCreated by Blananas2\n\nThe manual can be found
+    here: https://ktane.timwi.de/HTML/Common%20Sense.html"
+  version: 1.0
+  outputFolder: build
+  previewImage: {fileID: 2800000, guid: 86dd6ba34469fc940932c0a8e7378830, type: 3}
