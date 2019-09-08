@@ -15,8 +15,8 @@ MonoBehaviour:
   title: Common Sense
   author: Blananas2
   description: "Sorry history nerds, we ain\u2019t gonna do anything like that just
-    yet.\n\nModule ID: Common Sense\nCreated by Blananas2\n\nThe manual can be found
-    here: https://ktane.timwi.de/HTML/Common%20Sense.html"
-  version: 1.0
+    yet.\n\nModule ID: Common Sense\nCreated by Blananas2\nThanks to LeGeND for the
+    red needy texture!\n\nThe manual can be found here: https://ktane.timwi.de/HTML/Common%20Sense.html"
+  version: 1.1
   outputFolder: build
-  previewImage: {fileID: 2800000, guid: 86dd6ba34469fc940932c0a8e7378830, type: 3}
+  previewImage: {fileID: 2800000, guid: 640251048b79a154fb3da866a478b203, type: 3}

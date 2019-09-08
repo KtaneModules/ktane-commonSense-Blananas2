@@ -13,8 +13,8 @@ public class commonSenseScript : MonoBehaviour {
 
     public TextMesh[] texts; //0 = screen, 1 = left, 2 = right
     public KMSelectable[] buttons; //0 = screen, 1 = left, 2 = right
-    public Material[] mats; //0 = white, 1 = green, 2 = red, 3 = black
-    public GameObject theEdge;
+    public Material[] mats; //0 = normal, 1 = red
+    public GameObject theBack;
     KMAudio.KMAudioRef soundEffect;
 
     int puzzleType = 0;
@@ -60,7 +60,7 @@ public class commonSenseScript : MonoBehaviour {
             texts[0].text = "Common Sense";
             texts[1].text = "-";
             texts[2].text = "-";
-            theEdge.GetComponent<MeshRenderer>().material = mats[0];
+            theBack.GetComponent<MeshRenderer>().material = mats[0];
             texts[0].color = colors[6];
         }
     }
@@ -324,7 +324,7 @@ public class commonSenseScript : MonoBehaviour {
         if (edge == 1)
         {
             answer = (answer + 1) % 2;
-            theEdge.GetComponent<MeshRenderer>().material = mats[2];
+            theBack.GetComponent<MeshRenderer>().material = mats[1];
             Debug.LogFormat("[Common Sense #{0}] The edge is colored red.", moduleId);
             if (puzzleType == 5)
             {
@@ -335,7 +335,7 @@ public class commonSenseScript : MonoBehaviour {
             }
         } else
         {
-            theEdge.GetComponent<MeshRenderer>().material = mats[1];
+            theBack.GetComponent<MeshRenderer>().material = mats[0];
             Debug.LogFormat("[Common Sense #{0}] The edge is colored green.", moduleId);
         }
 
@@ -365,7 +365,7 @@ public class commonSenseScript : MonoBehaviour {
         texts[0].text = "Common Sense";
         texts[1].text = "-";
         texts[2].text = "-";
-        theEdge.GetComponent<MeshRenderer>().material = mats[0];
+        theBack.GetComponent<MeshRenderer>().material = mats[0];
         texts[0].color = colors[6];
         moduleSolved = true;
     }
@@ -378,7 +378,7 @@ public class commonSenseScript : MonoBehaviour {
             texts[0].text = "Common Sense";
             texts[1].text = "-";
             texts[2].text = "-";
-            theEdge.GetComponent<MeshRenderer>().material = mats[0];
+            theBack.GetComponent<MeshRenderer>().material = mats[0];
             texts[0].color = colors[6];
             Debug.LogFormat("[Common Sense #{0}] You didn't input your response in time.", moduleId);
             moduleSolved = true;
