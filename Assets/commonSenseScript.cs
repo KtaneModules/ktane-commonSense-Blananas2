@@ -222,7 +222,7 @@ public class commonSenseScript : MonoBehaviour {
             answer = 2;
         } else if (puzzleType == 6) //Let the needy timer run out, don’t press anything.
         {
-            texts[0].text = "Let the needy timer\n run out, don't\npress anything.";
+            texts[0].text = "Let the needy timer\nrun out, don't\npress anything.";
             texts[1].text = "-";
             texts[2].text = "-";
             answer = 4;
@@ -319,14 +319,14 @@ public class commonSenseScript : MonoBehaviour {
             }
         }
 
-        Debug.LogFormat("[Common Sense #{0}] The display says: {1}", moduleId, texts[0].text);
+        Debug.LogFormat("[Common Sense #{0}] The display says: {1}", moduleId, texts[0].text.Replace("\n", " "));
         Debug.LogFormat("[Common Sense #{0}] The left button says: {1}", moduleId, texts[1].text);
         Debug.LogFormat("[Common Sense #{0}] The right button says: {1}", moduleId, texts[2].text);
         if (edge == 1)
         {
             answer = (answer + 1) % 2;
             theBack.GetComponent<MeshRenderer>().material = mats[1];
-            Debug.LogFormat("[Common Sense #{0}] The edge is colored red.", moduleId);
+            Debug.LogFormat("[Common Sense #{0}] The background is colored red.", moduleId);
             if (puzzleType == 5)
             {
                 answer = 3;
@@ -337,7 +337,7 @@ public class commonSenseScript : MonoBehaviour {
         } else
         {
             theBack.GetComponent<MeshRenderer>().material = mats[0];
-            Debug.LogFormat("[Common Sense #{0}] The edge is colored green.", moduleId);
+            Debug.LogFormat("[Common Sense #{0}] The background is colored blue (normal).", moduleId);
         }
 
         if (answer == 0)
