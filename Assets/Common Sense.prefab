@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 114010179587203162}
   - component: {fileID: 114947869284696172}
   m_Layer: 0
-  m_Name: Template
+  m_Name: Common Sense
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1073,11 +1073,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Parent: {fileID: 0}
   Children:
+  - {fileID: 114520009886531296}
+  - {fileID: 114520009886531296}
   - {fileID: 114533618129310560}
   - {fileID: 114180737402506650}
-  - {fileID: 114520009886531296}
   IsPassThrough: 0
-  ChildRowLength: 0
+  ChildRowLength: 2
   Highlight: {fileID: 114570430299588062}
   SelectableColliders: []
   DefaultSelectableIndex: 0

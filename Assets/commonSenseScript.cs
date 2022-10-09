@@ -376,11 +376,6 @@ public class commonSenseScript : MonoBehaviour {
         if (answer != 4)
         {
             needyModule.HandleStrike();
-            texts[0].text = "Common Sense";
-            texts[1].text = "-";
-            texts[2].text = "-";
-            theBack.GetComponent<MeshRenderer>().material = mats[0];
-            texts[0].color = colors[6];
             Debug.LogFormat("[Common Sense #{0}] You didn't input your response in time.", moduleId);
             moduleSolved = true;
         } else
@@ -388,6 +383,11 @@ public class commonSenseScript : MonoBehaviour {
             needyModule.HandlePass();
             Debug.LogFormat("[Common Sense #{0}] You selected the correct answer. Pass.", moduleId);
         }
+        texts[0].text = "Common Sense";
+        texts[1].text = "-";
+        texts[2].text = "-";
+        theBack.GetComponent<MeshRenderer>().material = mats[0];
+        texts[0].color = colors[6];
     }
 
     void buttonPress(KMSelectable button)
